@@ -1,0 +1,73 @@
+@import "reset.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+body{
+    min-width: 320px;
+    background:#B0E0E6;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 20px 20px 20px;
+}
+.text_overflow{
+
+}
+
+/** FORM **/
+.title_h3, .form, .card{
+    background: #F9F9F9;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+.form {
+    width:100%;
+    padding: 25px;
+    color: #777;
+}
+.form h3{
+    color: #FF9D66;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.form h4 {
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+}
+.form input{
+    font: 400 16px "Open Sans", Helvetica, Arial, sans-serif;
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.form input:focus{
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #F96;
+}
+.form button, .more{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #00CCFF;
+    color: #FFFFFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+::-webkit-input-placeholder {color:#888}
+:-moz-placeholder {color:#888}
+::-moz-placeholder {color:#888}
+:-ms-input-placeholder {color:#888}
+.form_box{
+    border-left: 2px solid #CCC;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.title_form{
+    margin-bottom: 5px;
+    color: #F96;
+}

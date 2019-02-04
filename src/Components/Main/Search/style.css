@@ -1,0 +1,13 @@
+.search_box{
+    display: flex;
+    padding: 10px;
+    background: #F9F9F9;
+}
+.search_box button{
+    margin-left: 20px;
+    width: 100%;
+    max-width: 200px;
+}
+.search_box button, .search_box input{
+    height: 40px;
+}
