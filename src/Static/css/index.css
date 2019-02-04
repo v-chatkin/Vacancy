@@ -48,7 +48,7 @@ main{
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #F96;
 }
-.form button, .more{
+button, .settings_btn{
     cursor: pointer;
     width: 100%;
     border: none;

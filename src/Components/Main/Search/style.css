@@ -2,6 +2,7 @@
     display: flex;
     padding: 10px;
     background: #F9F9F9;
+    margin-bottom: 20px;
 }
 .search_box button{
     margin-left: 20px;
@@ -10,4 +11,5 @@
 }
 .search_box button, .search_box input{
     height: 40px;
+    margin-bottom: 0;
 }

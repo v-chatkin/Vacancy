@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './style.css';
 
 const vacancy_list = [
     {
@@ -37,7 +38,7 @@ export default class VacancyList extends Component {
     render(){
         const {show_more} = this.state;
         return(
-            <div>
+            <div className="vacancy_list">
                 {vacancy_list.map((vac, index) => {
                     return(
                         <section className="card" key={index}>
@@ -47,25 +48,21 @@ export default class VacancyList extends Component {
                                     <div className="line"/>
                                     <i>{vac.education}</i>
                                 </div>
-                                <div className="description">
+                                <div className="card_info">
                                     <b>Описание:</b>{vac.description}
                                 </div>
-                                {show_more &&
-                                    <div>
-                                        <div className="card_info">
-                                            <b>График:</b>{vac.schedule}
-                                        </div>
-                                        <div className="card_info">
-                                            <b>Обязанности:</b>{vac.duties}
-                                        </div>
-                                        <div className="card_info">
-                                            <b>Условия:</b>{vac.conditions}
-                                        </div>
-                                        <div className="card_info">
-                                            <b>Требования:</b>{vac.requirements}
-                                        </div>
-                                    </div>
-                                }
+                                <div className="card_info">
+                                    <b>График:</b>{vac.schedule}
+                                </div>
+                                <div className="card_info">
+                                    <b>Обязанности:</b>{vac.duties}
+                                </div>
+                                <div className="card_info">
+                                    <b>Условия:</b>{vac.conditions}
+                                </div>
+                                <div className="card_info">
+                                    <b>Требования:</b>{vac.requirements}
+                                </div>
                             </article>
                             <article className="right_card">
                                 <div className="title_card">
@@ -73,15 +70,22 @@ export default class VacancyList extends Component {
                                     <div className="line"/>
                                     <i>{vac.experience}</i>
                                 </div>
-                                <button className="more"
-                                        onClick={() => this.setState({show_more: !show_more})}
-                                >
-                                    {show_more ? "Свернуть" : "Подробнее"}
-                                </button>
+                                <div>
+
+                                <button className='settings_btn'>Изменить</button>
+                                <button className='settings_btn'>Изменить</button>
+                                <button className='settings_btn'>Изменить</button>
+                                </div>
+
                             </article>
                         </section>
                     )
                 })}
+                <div className="panel_vacancy">
+                    <button className="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
             </div>
 
         )
